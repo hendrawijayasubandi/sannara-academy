@@ -3,3 +3,4 @@
 | Main | Production  |
 |------|-------------|
 | Dev  | Development |
+| Staging  | Testing |
