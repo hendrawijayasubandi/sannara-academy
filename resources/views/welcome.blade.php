@@ -115,7 +115,7 @@
     </div>
 </section>
 
-<!-- PROGRAM HIGHLIGHT-->
+<!-- PROGRAM HIGHLIGHT SECTION-->
 <section id="program-highlights" class="py-24 bg-frosty-white">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="text-center mb-16">
@@ -149,6 +149,27 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL SECTION-->
+<section id="testimonial" class="py-24 bg-white">
+    <div class="mx-auto max-w-4xl px-6 lg:px-8 text-center font-heading">
+        <h2 class="text-3xl font-bold text-primary font-heading mb-12">What our client say</h2>
+
+        <div class="bg-frosty-white outline outline-1 outline-primary p-8 h-80 max-w-xl mx-auto rounded-2xl shadow-md flex items-center justify-center text-center">
+            <p class="text-primary font-body italic text-lg">
+                "Sannara gave me a global perspective and real impact experience." — <span class="font-body font-semibold text-primary">Alumni, France</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION-->
+<section id="cta" class="py-20 bg-frosty-white text-primary text-center">
+    <div class="mx-auto max-w-3xl px-6">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4">Ready to Start Your Journey?</h2>
+        <h2 class="text-xl md:text-3xl font-bold font-heading">Apply Now!</>
     </div>
 </section>
 
