@@ -104,7 +104,7 @@
         <main>
             @yield('content')
         </main>
-        <footer class="bg-frosty-white font-heading font-bold text-center text-md py-4">
+        <footer class="bg-frosty-white font-heading font-bold text-center text-primary text-md py-4">
             Sannara &copy; 2025 All Right Reserved
         </footer>
     </div>
