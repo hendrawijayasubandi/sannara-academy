@@ -12,20 +12,20 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
     <!-- Styles / Scripts -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
     <div id="app">
-        <header class="bg-frosty-white font-heading absolute inset-x-0 top-0 z-50">
-            <nav aria-label="Global" class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
+        <header class="absolute inset-x-0 top-0 z-50 bg-frosty-white font-heading">
+            <nav aria-label="Global" class="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl lg:px-8">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
-                        <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                            alt="" class="h-8 w-auto" />
+                        <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}"
+                            alt="" class="w-auto h-12" />
                     </a>
                 </div>
                 <!-- Tombol menu untuk mobile -->
@@ -47,7 +47,7 @@
                         <a href="/program-list" class="text-base font-semibold text-gray-900">Program List</a>
                         <a href="/about-us" class="text-base font-semibold text-gray-900">About Us</a>
                         <a href="#"
-                            class="text-base font-semibold text-white bg-primary hover:bg-white hover:text-primary border border-primary px-4 py-2 rounded-md transition">
+                            class="px-4 py-2 text-base font-semibold text-white transition border rounded-md bg-primary hover:bg-white hover:text-primary border-primary">
                             Book Now!
                         </a>
                     </div>
@@ -56,19 +56,18 @@
 
             <!-- Mobile menu -->
             <div id="mobileMenu"
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 
-                transform transition-transform duration-300 translate-x-full lg:hidden">
+                class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden">
                 <!-- Background backdrop -->
                 <div class="fixed inset-0 z-40 bg-black/20"></div>
 
                 <!-- Sidebar menu mobile -->
                 <div
-                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-frosty-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    class="fixed inset-y-0 right-0 z-50 w-full p-6 overflow-y-auto bg-frosty-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div class="flex items-center justify-between">
                         <a href="/" class="-m-1.5 p-1.5">
                             <span class="sr-only">Your Company</span>
-                            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="" class="h-8 w-auto" />
+                            <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}"
+                                alt="" class="w-auto h-12" />
                         </a>
                         <button id="closeMenu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span class="sr-only">Close menu</span>
@@ -79,16 +78,16 @@
                         </button>
                     </div>
 
-                    <div class="mt-6 flow-root">
+                    <div class="flow-root mt-6">
                         <div class="-my-6 divide-y divide-gray-500/10">
-                            <div class="space-y-2 py-6">
+                            <div class="py-6 space-y-2">
                                 <a href="/"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                                    class="block px-3 py-2 -mx-3 text-base font-semibold text-gray-900 rounded-lg hover:bg-gray-50">Home</a>
                                 <a href="/program-list"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Program
+                                    class="block px-3 py-2 -mx-3 text-base font-semibold text-gray-900 rounded-lg hover:bg-gray-50">Program
                                     List</a>
                                 <a href="/about-us"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About
+                                    class="block px-3 py-2 -mx-3 text-base font-semibold text-gray-900 rounded-lg hover:bg-gray-50">About
                                     Us</a>
                             </div>
                             <div class="py-6">
@@ -105,7 +104,7 @@
         <main>
             @yield('content')
         </main>
-        <footer class="bg-frosty-white font-heading font-bold text-center text-primary text-md py-4">
+        <footer class="py-4 font-bold text-center bg-frosty-white font-heading text-primary text-md">
             Sannara &copy; 2025 All Right Reserved
         </footer>
     </div>
@@ -124,6 +123,7 @@
             mobileMenu.classList.add('translate-x-full');
         });
     </script>
+    @yield('scripts')
 </body>
 
 </html>
