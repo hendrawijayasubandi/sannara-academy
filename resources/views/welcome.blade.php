@@ -121,7 +121,7 @@
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-primary font-heading">Program Highlights</h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col h-[420px]">
                 <img src="{{ asset('images/assets/florian-giorgio-PSJ-B59f-LE-unsplash.jpg') }}" alt="Program 1" class="w-full h-60 object-cover">
