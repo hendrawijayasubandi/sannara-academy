@@ -44,8 +44,8 @@
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <div class="flex items-center gap-x-8">
                         <a href="/" class="text-base font-semibold text-gray-900">Home</a>
-                        <a href="{{ route('program-list') }}" class="text-base font-semibold text-gray-900">Program List</a>
-                        <a href="{{ route('about-us') }}" class="text-base font-semibold text-gray-900">About Us</a>
+                        <a href="/program-list" class="text-base font-semibold text-gray-900">Program List</a>
+                        <a href="/about-us" class="text-base font-semibold text-gray-900">About Us</a>
                         <a href="#"
                             class="text-base font-semibold text-white bg-primary hover:bg-white hover:text-primary border border-primary px-4 py-2 rounded-md transition">
                             Book Now!
@@ -84,10 +84,10 @@
                             <div class="space-y-2 py-6">
                                 <a href="/"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-                                <a href="{{ route('program-list') }}"
+                                <a href="/program-list"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Program
                                     List</a>
-                                <a href="{{ route('about-us') }}"
+                                <a href="/about-us"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About
                                     Us</a>
                             </div>

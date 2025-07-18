@@ -13,23 +13,57 @@
     </div>
 </div>
 
-<!-- ABOUT SECTION -->
-<section id="about-section" class="py-24 bg-frosty-white">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="w-full">
-                <div class="aspect-w-4 aspect-h-2">
-                    <img src="/images/assets/krisna-yuda-MxbjqC6Sj1w-unsplash.jpg" alt="About Sannara Bali" class="object-cover rounded-2xl shadow-lg w-full h-full">
-                </div>
+<!-- MEET THE TEAM SECTION -->
+<section id="team" class="py-24 bg-frosty-white">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary font-heading">Meet The Team</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Card 1 -->
+        <div class="flex flex-col h-full">
+            <img src="{{ asset('images/assets/people-2.png') }}" alt="Team Member" class="rounded-2xl w-full aspect-[3/2] object-cover mb-4">
+            <div class="text-left flex-grow">
+                <h3 class="text-2xl font-bold font-heading text-primary">John Doe</h3>
+                <p class="font-heading text-primary font-semibold text-lg mb-2">Chief Executive Officer</p>
+                <p class="text-sm text-primary font-body mb-4">Leading our vision and global strategy with experience and dedication.</p>
             </div>
-            <div>
-                <h2 class="text-3xl font-bold text-primary font-heading mb-4">About Snapshot</h2>
-                <p class="text-lg text-gray-700 font-body leading-relaxed">
-                    Welcome to <strong class="font-heading">Sannara Bali Akademi</strong>. Where education meets culture.
-                    We blend academic excellence, real-world skills, and cultural immersion to create transformative learning experiences.
-                </p>
+            <div class="flex justify-center">
+                <a href="#" class="text-primary text-3xl">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
             </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col h-full">
+            <img src="{{ asset('images/assets/people-1.png') }}" alt="Team Member" class="rounded-2xl w-full aspect-[3/2] object-cover mb-4">
+            <div class="text-left flex-grow">
+                <h3 class="text-2xl font-bold font-heading text-primary">Jane Smith</h3>
+                <p class="font-heading text-primary font-semibold text-lg mb-2">Head of Operations</p>
+                <p class="text-sm text-primary font-body mb-4">Ensuring smooth processes and top-tier execution daily.</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="#" class="text-primary text-3xl">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        {{-- <div class="flex flex-col h-full">
+            <img src="{{ asset('images/assets/people-1.png') }}" alt="Team Member" class="rounded-2xl w-full aspect-[3/2] object-cover mb-4">
+            <div class="text-left flex-grow">
+                <h3 class="text-2xl font-bold font-heading text-primary">Michael Lee</h3>
+                <p class="font-heading text-primary font-semibold text-lg mb-2">Creative Director</p>
+                <p class="text-sm text-primary font-body mb-4">Crafting innovative experiences through design and storytelling.</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="#" class="text-primary text-3xl">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+            </div>
+        </div> --}}
     </div>
 </section>
 
