@@ -22,7 +22,7 @@
             <nav aria-label="Global" class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
                         <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                             alt="" class="h-8 w-auto" />
@@ -43,9 +43,9 @@
                 <!-- Menu desktop: semua link di kanan -->
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <div class="flex items-center gap-x-8">
-                        <a href="#" class="text-base font-semibold text-gray-900">Home</a>
-                        <a href="#" class="text-base font-semibold text-gray-900">Program List</a>
-                        <a href="#" class="text-base font-semibold text-gray-900">About Us</a>
+                        <a href="/" class="text-base font-semibold text-gray-900">Home</a>
+                        <a href="{{ route('program-list') }}" class="text-base font-semibold text-gray-900">Program List</a>
+                        <a href="{{ route('about-us') }}" class="text-base font-semibold text-gray-900">About Us</a>
                         <a href="#"
                             class="text-base font-semibold text-white bg-primary hover:bg-white hover:text-primary border border-primary px-4 py-2 rounded-md transition">
                             Book Now!
@@ -65,7 +65,7 @@
                 <div
                     class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-frosty-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
+                        <a href="/" class="-m-1.5 p-1.5">
                             <span class="sr-only">Your Company</span>
                             <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                                 alt="" class="h-8 w-auto" />
@@ -82,12 +82,12 @@
                     <div class="mt-6 flow-root">
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="space-y-2 py-6">
-                                <a href="#"
+                                <a href="/"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-                                <a href="#"
+                                <a href="{{ route('program-list') }}"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Program
                                     List</a>
-                                <a href="#"
+                                <a href="{{ route('about-us') }}"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About
                                     Us</a>
                             </div>

@@ -104,7 +104,7 @@
                 <div class="mb-4 text-primary">
                     <!-- Example icon -->
                     <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24">
+                            viewBox="0 0 24 24">
                         <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
