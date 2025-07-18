@@ -18,7 +18,7 @@
 <body>
     <div id="app">
         <header class="bg-frosty-white font-heading absolute inset-x-0 top-0 z-50">
-            <nav aria-label="Global" class="flex items-center justify-between p-4 lg:px-8">
+            <nav aria-label="Global" class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </header>
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
         <footer class="bg-frosty-white font-heading font-bold text-center text-md py-4">
