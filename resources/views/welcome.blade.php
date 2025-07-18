@@ -38,4 +38,81 @@
     </div>
 </section>
 
+<!-- WHY SANNARA SECTION -->
+<section id="features" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-primary font-heading">Why Sannara</h2>
+            {{-- <p class="text-lg text-primary mt-4">Lorem Ipsum</p> --}}
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center justify-center text-center p-6 h-72 bg-frosty-white rounded-2xl shadow-md">
+                <div class="mb-4 text-primary">
+                    <!-- Example icon -->
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="text-primary text-xl font-bold font-heading mb-2">Global Learning</h3>
+                <p class="text-primary font-heading">Engage in diverse, cross-cultural education.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center justify-center text-center p-6 h-72 bg-frosty-white rounded-2xl shadow-md">
+                <div class="mb-4 text-primary">
+                    <!-- Example icon -->
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="text-primary text-xl font-bold font-heading mb-2">Expert Mentorship</h3>
+                <p class="text-primary">Learn from leading industry professionals.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center justify-center text-center p-6 h-72 bg-frosty-white rounded-2xl shadow-md">
+                <div class="mb-4 text-primary">
+                    <!-- Example icon -->
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="text-primary text-xl font-bold font-heading mb-2">Cultural Immersion</h3>
+                <p class="text-primary">Immerse yourself in Bali's rich traditions.</p>
+            </div>
+            
+
+            <!-- Card 4 -->
+            <div class="flex flex-col items-center justify-center text-center p-6 h-72 bg-frosty-white rounded-2xl shadow-md">
+                <div class="mb-4 text-primary">
+                    <!-- Example icon -->
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="text-primary text-xl font-bold font-heading mb-2">Impact Projects</h3>
+                <p class="text-primary">Work on real-world, community-driven projects.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flex flex-col items-center justify-center text-center p-6 h-72 bg-frosty-white rounded-2xl shadow-md">
+                <div class="mb-4 text-primary">
+                    <!-- Example icon -->
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="text-primary text-xl font-bold font-heading mb-2">Career-Focused Certification</h3>
+                <p class="text-primary">Boost your academic and professional profile.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
