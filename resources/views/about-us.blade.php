@@ -3,7 +3,7 @@
 @section('content')
     <!-- HERO SECTION -->
     <section id="hero-section" class="bg-center bg-no-repeat bg-cover"
-        style="background-image: url('/images/assets/aron-visuals-1kdIG_258bU-unsplash.jpg');">
+        style="background-image: url('/images/assets/hero section img.png');">
         <div class="relative px-6 isolate pt-14 lg:px-8">
             <div class="py-32 mx-auto sm:py-48 lg:py-56">
                 <div class="text-center font-heading">
@@ -25,16 +25,15 @@
         <div class="grid grid-cols-1 gap-10 px-6 mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-7xl lg:px-8">
             <!-- Card 1 -->
             <div class="flex flex-col h-full">
-                <img src="{{ asset('images/assets/people-2.png') }}" alt="Team Member"
+                <img src="{{ asset('images/assets/Bryan Auriol.jpg') }}" alt="Team Member"
                     class="rounded-2xl w-full aspect-[3/2] object-cover mb-4">
                 <div class="flex-grow text-left">
-                    <h3 class="text-2xl font-bold font-heading text-primary">John Doe</h3>
-                    <p class="mb-2 text-lg font-semibold font-heading text-primary">Chief Executive Officer</p>
-                    <p class="mb-4 text-sm text-primary font-body">Leading our vision and global strategy with
-                        experience and dedication.</p>
+                    <h3 class="text-2xl font-bold font-heading text-primary">Bryan Auriol</h3>
+                    <p class="mb-2 text-lg font-semibold font-heading text-primary">Managing Directos</p>
+                    <p class="mb-4 text-sm text-primary font-body">Short description</p>
                 </div>
                 <div class="flex justify-center">
-                    <a href="#" class="text-3xl text-primary">
+                    <a href="#" class="text-3xl transition-colors duration-300 text-primary hover:text-blue-600">
                         <i class="ri-linkedin-box-fill"></i>
                     </a>
                 </div>
@@ -42,16 +41,15 @@
 
             <!-- Card 2 -->
             <div class="flex flex-col h-full">
-                <img src="{{ asset('images/assets/people-1.png') }}" alt="Team Member"
+                <img src="{{ asset('images/assets/Komang Sarining.jpg') }}" alt="Team Member"
                     class="rounded-2xl w-full aspect-[3/2] object-cover mb-4">
                 <div class="flex-grow text-left">
-                    <h3 class="text-2xl font-bold font-heading text-primary">Jane Smith</h3>
-                    <p class="mb-2 text-lg font-semibold font-heading text-primary">Head of Operations</p>
-                    <p class="mb-4 text-sm text-primary font-body">Ensuring smooth processes and top-tier execution
-                        daily.</p>
+                    <h3 class="text-2xl font-bold font-heading text-primary">Komang Sarining</h3>
+                    <p class="mb-2 text-lg font-semibold font-heading text-primary">Secretary and Finance</p>
+                    <p class="mb-4 text-sm text-primary font-body">Short description</p>
                 </div>
                 <div class="flex justify-center">
-                    <a href="#" class="text-3xl text-primary">
+                    <a href="#" class="text-3xl transition-colors duration-300 text-primary hover:text-blue-600">
                         <i class="ri-linkedin-box-fill"></i>
                     </a>
                 </div>
@@ -77,8 +75,14 @@
     </section>
 
     <!-- FORM SECTION -->
-    <section id="contact" class="py-24 bg-white">
-        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+    <section id="contact" class="relative py-24 bg-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 bg-repeat pointer-events-none"
+            style="background-image: url('/images/assets/patternpad-2025-07-19-09-37-05.svg'); background-size: 500px;">
+        </div>
+
+        <!-- Content Wrapper with higher z-index -->
+        <div class="relative z-10 px-6 mx-auto max-w-7xl lg:px-8">
             <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-2">
                 <!-- Form Section -->
                 <div class="h-full p-8 shadow-md bg-frosty-white rounded-2xl">
@@ -111,27 +115,29 @@
                 </div>
 
                 <!-- Our Location -->
-                <div class="flex flex-col justify-between h-full rounded-2xl">
-                    <h3 class="mb-6 text-2xl font-bold text-center font-heading text-primary">Our Location</h3>
-                    <div class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2">
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-mail-line text-primary"></i>
-                            <span class="font-body text-primary">contact@sannara.com</span>
+                <div class="h-full p-8 shadow-md bg-frosty-white rounded-2xl">
+                    <div class="flex flex-col justify-between h-full rounded-2xl">
+                        <h3 class="mb-6 text-2xl font-bold text-center font-heading text-primary">Our Location</h3>
+                        <div class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2">
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-mail-line text-primary"></i>
+                                <span class="font-body text-primary">contact@sannara.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-global-line text-primary"></i>
+                                <span class="font-body text-primary">www.sannara.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-linkedin-box-fill text-primary"></i>
+                                <span class="font-body text-primary">linkedin.com/sannara</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-global-line text-primary"></i>
-                            <span class="font-body text-primary">www.sannara.com</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-linkedin-box-fill text-primary"></i>
-                            <span class="font-body text-primary">linkedin.com/sannara</span>
-                        </div>
-                    </div>
 
-                    <div class="w-full overflow-hidden rounded-lg h-96">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." class="w-full h-full border-0"
-                            allowfullscreen="" loading="lazy">
-                        </iframe>
+                        <div class="w-full overflow-hidden rounded-lg h-96">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." class="w-full h-full border-0"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>

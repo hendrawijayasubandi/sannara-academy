@@ -7,6 +7,18 @@
 
     <title>Sannara Academy</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon/favicon.svg') }}">
+
+    <!-- Apple Touch -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
+    <meta name="apple-mobile-web-app-title" content="Sannara Academy">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -24,8 +36,8 @@
                 <div class="flex lg:flex-1">
                     <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
-                        <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}"
-                            alt="" class="w-auto h-12" />
+                        <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}" alt=""
+                            class="w-auto h-12" />
                     </a>
                 </div>
                 <!-- Tombol menu untuk mobile -->
@@ -66,8 +78,8 @@
                     <div class="flex items-center justify-between">
                         <a href="/" class="-m-1.5 p-1.5">
                             <span class="sr-only">Your Company</span>
-                            <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}"
-                                alt="" class="w-auto h-12" />
+                            <img src="{{ asset('images/logo-sannara/logo-sannara-academy.png') }}" alt=""
+                                class="w-auto h-12" />
                         </a>
                         <button id="closeMenu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span class="sr-only">Close menu</span>

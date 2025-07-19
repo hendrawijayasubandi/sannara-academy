@@ -3,7 +3,7 @@
 @section('content')
     <!-- HERO SECTION -->
     <section id="hero-section" class="bg-center bg-no-repeat bg-cover"
-        style="background-image: url('/images/assets/aron-visuals-1kdIG_258bU-unsplash.jpg');">
+        style="background-image: url('/images/assets/hero section img.png');">
         <div class="relative px-6 isolate pt-14 lg:px-8">
             <div class="py-32 mx-auto sm:py-48 lg:py-56">
                 <div class="text-center font-heading">
@@ -46,15 +46,21 @@
     </section>
 
     <!-- WHY SANNARA SECTION -->
-    <section id="features" class="py-24 bg-white">
-        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+    <section id="features" class="relative py-24 bg-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 bg-repeat"
+            style="background-image: url('/images/assets/patternpad-2025-07-19-09-37-05.svg'); background-size: 500px;">
+        </div>
+
+        <!-- Foreground Content -->
+        <div class="relative z-10 px-6 mx-auto max-w-7xl lg:px-8">
             <div class="mb-16 text-center">
                 <h2 class="text-3xl font-bold text-primary font-heading">Why Sannara</h2>
             </div>
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Card 1 -->
                 <div
-                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-3">
+                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-4">
                     <div class="mb-4 text-7xl text-primary">
                         <i class="ri-earth-fill"></i>
                     </div>
@@ -64,7 +70,7 @@
 
                 <!-- Card 2 -->
                 <div
-                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-3">
+                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-4">
                     <div class="mb-4 text-7xl text-vivid-sky-blue">
                         <i class="ri-presentation-fill"></i>
                     </div>
@@ -74,7 +80,7 @@
 
                 <!-- Card 3 -->
                 <div
-                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-3">
+                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-4">
                     <div class="mb-4 text-7xl text-pink">
                         <i class="ri-flower-fill"></i>
                     </div>
@@ -84,7 +90,7 @@
 
                 <!-- Card 4 -->
                 <div
-                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-3">
+                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-4">
                     <div class="mb-4 text-7xl text-tosca">
                         <i class="ri-rocket-2-fill"></i>
                     </div>
@@ -94,7 +100,7 @@
 
                 <!-- Card 5 -->
                 <div
-                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-3">
+                    class="flex flex-col items-center justify-center p-6 text-center transition shadow-md h-72 bg-frosty-white rounded-2xl hover:outline hover:outline-primary hover:outline-4">
                     <div class="mb-4 text-7xl text-sunshine-yellow">
                         <i class="ri-graduation-cap-fill"></i>
                     </div>
@@ -146,16 +152,25 @@
     </section>
 
     <!-- TESTIMONIAL SECTION-->
-    <section id="testimonial" class="py-24 bg-white">
-        <div class="max-w-4xl px-6 mx-auto text-center lg:px-8 font-heading">
-            <h2 class="mb-12 text-3xl font-bold text-primary font-heading">What our client say</h2>
+    <section id="testimonial" class="relative py-24 bg-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 bg-repeat"
+            style="background-image: url('/images/assets/patternpad-2025-07-19-09-37-05.svg'); background-size: 500px;">
+        </div>
 
-            <div
-                class="flex items-center justify-center max-w-xl p-8 mx-auto text-center shadow-md bg-frosty-white outline outline-1 outline-primary h-80 rounded-2xl">
-                <p class="text-lg italic text-primary font-body">
-                    "Sannara gave me a global perspective and real impact experience." — <span
-                        class="font-semibold font-body text-primary">Alumni, France</span>
-                </p>
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl px-6 mx-auto text-center lg:px-8 font-heading">
+            <h2 class="text-3xl font-bold text-primary font-heading">Testimonial</h2><br>
+            <h2 class="mb-12 text-2xl font-bold text-primary">What our client say</h2>
+
+            <div class="testimonial-slider">
+                <div
+                    class="flex items-center justify-center max-w-xl p-8 mx-auto text-center shadow-md bg-frosty-white outline outline-1 outline-primary h-80 rounded-2xl">
+                    <p class="text-lg italic text-primary font-body">
+                        "Sannara gave me a global perspective and real impact experience." —
+                        <span class="font-semibold text-primary">Alumni, France</span>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -169,8 +184,14 @@
     </section>
 
     <!-- FORM SECTION -->
-    <section id="contact" class="py-24 bg-white">
-        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+    <section id="contact" class="relative py-24 bg-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 bg-repeat pointer-events-none"
+            style="background-image: url('/images/assets/patternpad-2025-07-19-09-37-05.svg'); background-size: 500px;">
+        </div>
+
+        <!-- Content Wrapper with higher z-index -->
+        <div class="relative z-10 px-6 mx-auto max-w-7xl lg:px-8">
             <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-2">
                 <!-- Form Section -->
                 <div class="h-full p-8 shadow-md bg-frosty-white rounded-2xl">
@@ -203,27 +224,29 @@
                 </div>
 
                 <!-- Our Location -->
-                <div class="flex flex-col justify-between h-full rounded-2xl">
-                    <h3 class="mb-6 text-2xl font-bold text-center font-heading text-primary">Our Location</h3>
-                    <div class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2">
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-mail-line text-primary"></i>
-                            <span class="font-body text-primary">contact@sannara.com</span>
+                <div class="h-full p-8 shadow-md bg-frosty-white rounded-2xl">
+                    <div class="flex flex-col justify-between h-full rounded-2xl">
+                        <h3 class="mb-6 text-2xl font-bold text-center font-heading text-primary">Our Location</h3>
+                        <div class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2">
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-mail-line text-primary"></i>
+                                <span class="font-body text-primary">contact@sannara.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-global-line text-primary"></i>
+                                <span class="font-body text-primary">www.sannara.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="text-4xl ri-linkedin-box-fill text-primary"></i>
+                                <span class="font-body text-primary">linkedin.com/sannara</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-global-line text-primary"></i>
-                            <span class="font-body text-primary">www.sannara.com</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <i class="text-4xl ri-linkedin-box-fill text-primary"></i>
-                            <span class="font-body text-primary">linkedin.com/sannara</span>
-                        </div>
-                    </div>
 
-                    <div class="w-full overflow-hidden rounded-lg h-96">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." class="w-full h-full border-0"
-                            allowfullscreen="" loading="lazy">
-                        </iframe>
+                        <div class="w-full overflow-hidden rounded-lg h-96">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." class="w-full h-full border-0"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
